@@ -36,6 +36,7 @@
         $_SESSION["test"][4]=$email;
         $_SESSION["test"][5]=$pass;
         $_SESSION["test"][6]=$regdate;
+        
         echo 1;
     } 
     else{

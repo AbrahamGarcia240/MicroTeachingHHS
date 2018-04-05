@@ -55,12 +55,12 @@
 
         <div class="section white">
             <div class="row container">
-                <h2 class="header center">Welcome</h2>
+                <h2 class="header center">Welcome <?php echo $_SESSION["test"][2]." ".$_SESSION["test"][3];?></h2>
                 <div class="row">
-                    <div class="col 6"><h4>Your email is: </h4></div>
+                    <div class="col 6"><h4>Your email is: <?php echo $_SESSION["test"][4].""; ?> </h4></div>
                 </div>
                 <div class="row">
-                    <div class="col 6"><h4>Your registration date was: </h4></div>
+                    <div class="col 6"><h4>Your registration date was: <?php echo $_SESSION["test"][6].""; ?></h4></div>
                 </div>
 
             </div>
