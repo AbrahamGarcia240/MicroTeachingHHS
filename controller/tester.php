@@ -17,7 +17,7 @@
 				else{
 					 echo "Error: " . $sql . "<br>" . mysqli_error($conection);
 	}
-    //$numrows=mysqli_num_rows($response);
+    $numrows=mysqli_num_rows($response);
     
      while($column=mysqli_fetch_array($response)){
         $id=$column['id'];
@@ -25,6 +25,21 @@
 		$lastname=$column['lastname'];
 		$regdate=$column['reg_date'];
     }
-    echo $id." ".$firstname." ".$lastname." ".$regdate;
-			
+    
+    
+    session_start();
+
+    if($numrows==1){
+        $_SESSION["test"][1]=$id;
+        $_SESSION["test"][2]=$firstname;
+        $_SESSION["test"][3]=$lastname;
+        $_SESSION["test"][4]=$email;
+        $_SESSION["test"][5]=$pass;
+        $_SESSION["test"][6]=$regdate;
+        echo 1;
+    } 
+    else{
+        echo 0;
+    }
+
 ?>
