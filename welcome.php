@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
     session_start();
-    
+  
 ?>
 <html>
 
@@ -30,7 +30,10 @@
             $('.parallax').parallax();
 
             $('.modal').modal();
-
+            
+            $("#logoutbutton").click(function(e) {
+                alert("hello");
+            });
 
         });
 
@@ -43,7 +46,7 @@
                 <ul class="left hide-on-med-and-down">
                     <li><a href="sass.html">Sass</a></li>
                     <li><a href="badges.html">Components</a></li>
-                    <li class="active"><a href="collapsible.html">Log out</a></li>
+                    <li class="active"><a href="#" id="logoutbutton">Log out</a></li>
                 </ul>
             </div>
         </nav>
@@ -90,6 +93,7 @@
 
 
 
-</body>
+    </body>
+
 
 </html>
