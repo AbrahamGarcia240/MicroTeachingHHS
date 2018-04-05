@@ -32,7 +32,14 @@
             $('.modal').modal();
             
             $("#logoutbutton").click(function(e) {
-                alert("hello");
+                $.ajax({
+                    type: "post",
+                    url: "controller/logout.php",
+                    success: function(resp) {
+                        alert("bye");
+                        window.location="index.php";
+                    }
+                });
             });
 
         });
