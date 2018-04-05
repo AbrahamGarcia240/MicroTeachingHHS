@@ -37,7 +37,7 @@
                     url: "controller/logout.php",
                     success: function(resp) {
                         alert("bye");
-                        window.location="index.php";
+                        window.location="Index.php";
                     }
                 });
             });

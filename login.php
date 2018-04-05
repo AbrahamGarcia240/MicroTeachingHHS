@@ -41,6 +41,7 @@
                         if (resp == 1) {
                             
                             alert("good");
+                            window.location="welcome.php";
 
                         } else {
                             //alert(resp)
