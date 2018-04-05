@@ -7,7 +7,7 @@
     
     
 
-    $sql="select * from users where password=".$pass."'and email='".$email."';";
+    $sql="select * from users where password='".$pass."'and email='".$email."';";
     echo $sql;
     //$result=mysqli_query($conection,$sql);
     

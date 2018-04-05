@@ -33,11 +33,11 @@
 
                 $.ajax({
                     type: "post",
-                    url: "controller/littleserver.php",
+                    url: "controller/tester.php",
                     data: $("#example").serialize(),
                     success: function(resp) {
-                        //alert(resp);
-
+                        alert(resp);
+                        /*
                         if (resp == 1) {
                             $('#modal1').modal('open');
                             //alert("good");
@@ -46,6 +46,7 @@
                             //alert(resp)
                             $('#modal2').modal('open');
                         }
+                        */
 
 
                     }
