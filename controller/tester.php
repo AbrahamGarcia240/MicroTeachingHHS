@@ -8,14 +8,16 @@
     
 
     $sql="select * from users where password='".$pass."'and email='".$email."';";
-    echo $sql;
-    //$result=mysqli_query($conection,$sql);
+    //echo $sql;
+    //check if I was able to do the consult
+    if($response=mysqli_query($conection,$sql))
+				{
+					echo 1;
+				}
+				else{
+					 echo "Error: " . $sql . "<br>" . mysqli_error($conection);
+	}
+
     
-    /*if(!$result){
-        echo "Error: " . $sql . "<br>" . mysqli_error($conection);
-    }
-    else{
-        echo 1;
-    }*/
-    
+			
 ?>
